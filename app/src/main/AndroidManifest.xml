@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nolan.golfappfyp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".Scorecard" />
+        <activity android:name=".Admin" />
+        <activity android:name=".stableford_hole1" />
+        <activity android:name=".stableford_hole2" />
+        <activity android:name=".stableford_hole3" />
+        <activity android:name=".stableford_hole4" />
+        <activity android:name=".stableford_hole5" />
+        <activity android:name=".stableford_hole6" />
+        <activity android:name=".stableford_hole7" />
+        <activity android:name=".stableford_hole8" />
+        <activity android:name=".stableford_hole9" />
+        <activity android:name=".stableford_hole10" />
+        <activity android:name=".stableford_hole11" />
+        <activity android:name=".stableford_hole12" />
+        <activity android:name=".stableford_hole13" />
+        <activity android:name=".stableford_hole14" />
+        <activity android:name=".stableford_hole15" />
+        <activity android:name=".stableford_hole16" />
+        <activity android:name=".stableford_hole17" />
+        <activity android:name=".stableford_hole18" />
+        <activity android:name=".finalScore" />
+        <activity android:name=".front9score"></activity>
+    </application>
+
+</manifest>

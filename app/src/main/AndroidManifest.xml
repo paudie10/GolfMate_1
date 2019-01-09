@@ -38,7 +38,8 @@
         <activity android:name=".stableford_hole17" />
         <activity android:name=".stableford_hole18" />
         <activity android:name=".finalScore" />
-        <activity android:name=".front9score"></activity>
+        <activity android:name=".front9score" />
+        <activity android:name=".testGit"></activity>
     </application>
 
 </manifest>

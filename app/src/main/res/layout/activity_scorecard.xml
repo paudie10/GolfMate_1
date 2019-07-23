@@ -6,46 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Scorecard">
 
-    <TextView
-        android:id="@+id/txtName"
-        android:layout_width="102dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="tetstetets"
-        android:textColor="@color/colorPrimaryDark"
-        android:textFontWeight="Medium"
-        android:textSize="14sp"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
-
-    <TextView
-        android:id="@+id/txtCompName"
-        android:layout_width="176dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Monthly Medal"
-        android:textColor="@color/colorPrimaryDark"
-        android:textFontWeight="Medium"
-        android:textSize="14sp"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108" />
-
     <EditText
         android:id="@+id/txtScore"
         android:layout_width="183dp"
@@ -79,43 +39,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.667" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="174dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Competition Name"
-        android:textColor="@color/colorPrimaryDark"
-        android:textFontWeight="Medium"
-        android:textSize="14sp"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/txtGolfClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="137dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Player Name"
-        android:textColor="@color/colorPrimaryDark"
-        android:textFontWeight="Medium"
-        android:textSize="14sp"
-        android:typeface="monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017" />
+    <EditText
+        android:id="@+id/txtCompName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:hint="Comp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtGolfClub"
+        app:layout_constraintTop_toBottomOf="@+id/txtGolfClub" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtCompName"
+        app:layout_constraintTop_toBottomOf="@+id/txtCompName" />
+
 </android.support.constraint.ConstraintLayout>

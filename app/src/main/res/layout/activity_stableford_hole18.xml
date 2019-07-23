@@ -2,243 +2,225 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/txtHandicap"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".stableford_hole18">
+    tools:context=".stableford_hole18"
+    tools:layout_editor_absoluteY="25dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="62dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Handicap"
+
+    <EditText
+        android:id="@+id/txtYourScore"
+        android:layout_width="97dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="112dp"
+        android:ems="10"
+        android:hint="Enter Score"
+        android:inputType="number"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.542" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="24dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Par"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
-
-    <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txtStableford"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Hole"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/cormorant"
+        android:text="0"
+        android:textColor="#111"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtYourScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtYourScore" />
+
+
+    <Button
+        android:id="@+id/btnNextHole"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="#111"
+        android:fontFamily="@font/cormorant"
+        android:text="Next Hole"
+        android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintTop_toTopOf="@+id/rbFH" />
+
+
+    <Spinner
+        android:id="@+id/txtNoofPutts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="@font/cormorant"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9" />
+
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="28dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="18"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/cormorant"
+        android:text="No. of Putts:"
+        android:textColor="#111"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNoofPutts"
+        app:layout_constraintEnd_toStartOf="@+id/txtNoofPutts"
+        app:layout_constraintStart_toEndOf="@+id/rbFH" />
+
+    <RadioButton
+        android:id="@+id/rbGIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/cormorant"
+        android:text="GIR"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rbFH"
+        app:layout_constraintEnd_toStartOf="@+id/rbFH"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rbFH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/cormorant"
+        android:text="FR"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/rbGIR"
+        app:layout_constraintTop_toBottomOf="@+id/txtYourScore" />
+
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txtPar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Par"
+        android:textColor="#111"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtHole"
+        app:layout_constraintTop_toBottomOf="@+id/txtHole" />
+
+    <TextView
+        android:id="@+id/txtYards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Yards"
+        android:textColor="#111"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtPar"
+        app:layout_constraintTop_toBottomOf="@+id/txtPar" />
+
+    <TextView
+        android:id="@+id/txtIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/cormorant"
         android:text="Index"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.835"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        android:textColor="#111"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtYards"
+        app:layout_constraintTop_toBottomOf="@+id/txtYards" />
 
-    <EditText
-        android:id="@+id/txtYourScore_hole18"
-        android:layout_width="110dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Your Score"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
-
-    <Button
-        android:id="@+id/btnNextHole_hole18"
+    <TextView
+        android:id="@+id/txtHole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Calculate Final Score"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Hole 18"
+        android:textColor="#111"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
-        android:id="@+id/txtGrossScore_hole18"
-        android:layout_width="62dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/cormorant"
+        android:text="TextView"
+        android:textColor="#111"
+        android:textSize="14dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtStableford_hole18"
-        android:layout_width="28dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:id="@+id/txtCompName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/cormorant"
+        android:text="TextView"
+        android:textColor="#111"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintStart_toEndOf="@id/txtName"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="71dp"
-        android:layout_height="20dp"
+    <View
+        android:id="@+id/divider"
+        android:layout_width="304dp"
+        android:layout_height="1dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Gross Score"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        android:layout_marginTop="56dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="71dp"
-        android:layout_height="20dp"
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="304dp"
+        android:layout_height="1dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Stableford"
+        android:layout_marginBottom="172dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#111"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.939"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/txtIndex_hole18"
-        android:layout_width="25dp"
-        android:layout_height="38dp"
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="304dp"
+        android:layout_height="1dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:enabled="true"
-        android:inputType="number"
-        android:text="2"
+        android:layout_marginBottom="92dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#111"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/txtPar_hole18"
-        android:layout_width="27dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:enabled="true"
-        android:inputType="number"
-        android:text="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
-
-    <EditText
-        android:id="@+id/txthCap_hole18"
-        android:layout_width="31dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:enabled="true"
-        android:inputType="number"
-        android:text="8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068" />
 </android.support.constraint.ConstraintLayout>

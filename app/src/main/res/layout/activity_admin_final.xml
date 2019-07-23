@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey"
+    tools:context=".Admin_Final"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/txtCompName"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="178dp"
+        android:ems="10"
+
+        android:hint="Competition Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPrice"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        android:textColorHint="#111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCompName" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#111"
+        android:fontFamily="@font/cormorant"
+        android:text="Create Competition"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/btnReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtPrice" />
+
+    <Button
+        android:id="@+id/btncreateCourse"
+
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#111"
+        android:fontFamily="@font/cormorant"
+        android:text="Create Your Course"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnReturn" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#111"
+        android:fontFamily="@font/cormorant"
+        android:text="Check Results"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncreateCourse" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:text="TextView"
+        android:fontFamily="@font/cormorant"
+        android:textColor="#111"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="17sp"
+        android:fontFamily="@font/cormorant"
+        android:textColor="#111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="43dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Set-Up Competition"
+        android:textColor="#111"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCompName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCourseName" />
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="420dp"
+        android:background="@null"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCourseName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

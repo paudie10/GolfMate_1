@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Results"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="17dp"
+        android:text="Search"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#698b47"
+        android:textColor="#fff"
+        android:fontFamily="@font/cormorant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtCompName"
+        app:layout_constraintStart_toStartOf="@+id/txtCompName"
+        app:layout_constraintTop_toBottomOf="@+id/txtGolfClub" />
+
+
+    <ListView
+        android:id="@+id/lstResults"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="27dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"
+        android:paddingLeft="2dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtGolfClub"
+        app:layout_constraintEnd_toStartOf="@+id/txtCompName"
+        app:layout_constraintStart_toStartOf="@+id/txtCompName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"></ListView>
+
+
+    <EditText
+        android:id="@+id/txtGolfClub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Club Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#111"
+        android:fontFamily="@font/cormorant"
+
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toStartOf="@+id/txtCompName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstResults" />
+
+    <EditText
+        android:id="@+id/txtCompName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Competition Name"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/cormorant"
+        android:textColorHint="#111"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtGolfClub" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Search Competiton Results"
+        android:textColor="#111"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

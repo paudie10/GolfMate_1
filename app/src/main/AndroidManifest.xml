@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Launch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,7 +39,67 @@
         <activity android:name=".stableford_hole18" />
         <activity android:name=".finalScore" />
         <activity android:name=".front9score" />
-        <activity android:name=".testGit"></activity>
+        <activity android:name=".Competitions" />
+        <activity android:name=".adminSignUp" />
+        <activity android:name=".createcourse_hole1" />
+        <activity android:name=".createcourse_hole2" />
+        <activity android:name=".createcourse_hole3" />
+        <activity android:name=".createcourse_hole4" />
+        <activity android:name=".createcourse_hole5" />
+        <activity android:name=".createcourse_hole6" />
+        <activity android:name=".createcourse_hole7" />
+        <activity android:name=".createcourse_hole8" />
+        <activity android:name=".createcourse_hole9" />
+        <activity android:name=".createcourse_hole10" />
+        <activity android:name=".createcourse_hole11" />
+        <activity android:name=".createcourse_hole12" />
+        <activity android:name=".createcourse_hole13" />
+        <activity android:name=".createcourse_hole14" />
+        <activity android:name=".createcourse_hole15" />
+        <activity android:name=".createcourse_hole16" />
+        <activity android:name=".createcourse_hole17" />
+        <activity android:name=".createcourse_hole18" />
+        <activity android:name=".Results" />
+        <activity android:name=".paypal" />
+        <activity android:name=".PaymentDetails" />
+        <activity android:name=".Stats" />
+        <activity android:name=".Profile_login" />
+        <activity android:name=".Profile_final" />
+        <activity android:name=".login" />
+        <activity android:name=".Admin_login" />
+        <activity android:name=".Admin_Final" />
+        <activity android:name=".stableford_hole1_practice" />
+        <activity android:name=".stableford_hole2_practice" />
+        <activity android:name=".stableford_hole3_practice" />
+        <activity android:name=".stableford_hole4_practice" />
+        <activity android:name=".stableford_hole5_practice" />
+        <activity android:name=".stableford_hole6_practice" />
+        <activity android:name=".stableford_hole7_practice" />
+        <activity android:name=".stableford_hole8_practice" />
+        <activity android:name=".stableford_hole9_practice" />
+        <activity android:name=".stableford_hole10_practice" />
+        <activity android:name=".stableford_hole11_practice" />
+        <activity android:name=".stableford_hole12_practice" />
+        <activity android:name=".stableford_hole13_practice" />
+        <activity android:name=".stableford_hole14_practice" />
+        <activity android:name=".stableford_hole15_practice" />
+        <activity android:name=".stableford_hole16_practice" />
+        <activity android:name=".stableford_hole17_practice" />
+        <activity android:name=".stableford_hole18_practice" />
+        <activity android:name=".practice_finalScore" />
+        <activity android:name=".practice_front9score" />
+        <activity android:name=".practiceRound" />
+
+
+
+
+        <activity android:name=".adminLogin"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

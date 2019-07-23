@@ -4,53 +4,226 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".finalScore">
+    tools:context=".finalScore"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="123dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#698b47"
+        android:fontFamily="@font/cormorant"
+        android:text="Submit Score"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCompName" />
+
+    <TextView
+        android:id="@+id/txtCompName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Havrvey Invitational"
+        android:textColor="#111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPartner"
+        android:layout_width="129dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="Partners Username"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="122dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="65dp"
+        android:ems="10"
+        android:hint="Partners Password"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBack" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#698b47"
+        android:fontFamily="@font/cormorant"
+        android:text="Confirm Signature"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPartner" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Paudie Nolan"
+        android:textColor="#111"
+        app:layout_constraintEnd_toStartOf="@+id/txtCompName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtStableford_finalScore"
-        android:layout_width="78dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:text="34 points"
+        android:textColor="#111"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubmit"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txtGIR"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Final Stableford Score"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/cormorant"
+        android:text="GIR: 14/18"
+        android:textColor="#111"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFH"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintTop_toTopOf="@+id/txtFront" />
 
-    <Button
-        android:id="@+id/btnNextHole_finalScore"
+    <TextView
+        android:id="@+id/txtPutts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Submit"
+        android:fontFamily="@font/cormorant"
+        android:text="34 putts"
+        android:textColor="#111"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtFH"
+        app:layout_constraintTop_toBottomOf="@+id/txtFH" />
+
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Back 9: 20 points"
+        android:textColor="#111"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFront" />
+
+    <TextView
+        android:id="@+id/txtFH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/cormorant"
+        android:text="FR: 10/18"
+        android:textColor="#111"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtGIR"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/txtFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Front 9: 18 points"
+        android:textColor="#111"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/cormorant"
+        android:text="Your Stats"
+        android:textColor="#111"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729" />
+        app:srcCompat="@drawable/logo_clipped_rev_1" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="82dp"
+        android:background="#111"
+        app:layout_constraintBottom_toTopOf="@+id/txtPutts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="127dp"
+        android:background="#111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.0" />
+
 </android.support.constraint.ConstraintLayout>
